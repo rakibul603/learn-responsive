@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Gallery</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
@@ -42,9 +43,25 @@
             grid-column: span 1;
             grid-row: span 1;
         }
+
+        @media screen and (max-width: 576px) {
+            .container {
+
+                grid-template-columns: repeat(2, 1fr);
+                /* grid-template-rows: repeat(6, 200px); */
+            }
+
+            .big-layout,
+            .wide-layout,
+            .normal-layout,
+            .small-layout {
+                grid-row: span 1;
+            }
+        }
     </style>
-    
+
 </head>
+
 <body>
     <div class="container">
         <div class="big-layout ">
@@ -65,19 +82,19 @@
         <div class="normal-layout">
             <img src="./images/F.jpg" alt="">
         </div>
-        
+
         <div class="small-layout">
             <img src="./images/G.jpg" alt="">
         </div>
         <div class="small-layout">
             <img src="./images/G.jpg" alt="">
         </div>
-   
+
         <div class="normal-layout">
             <img src="./images/H.jpg" alt="">
         </div>
 
-            <div class="small-layout">
+        <div class="small-layout">
             <img src="./images/G.jpg" alt="">
         </div>
         <div class="small-layout">
@@ -85,4 +102,5 @@
         </div>
     </div>
 </body>
+
 </html>
