@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive flex</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .box {
+            background-color: teal;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .box-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .items{
+            width: 100px;
+            background-color: tomato;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+            .items {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <h2>Les't Explore Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>box - 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sed praesentium facere nisi quod
+                officia vitae distinctio quis unde? Optio consequuntur alias accusantium necessitatibus facilis commodi
+                sed eaque? Voluptas voluptatum omnis exercitationem hic odio? Minima enim atque eos veniam consequatur,
+                laborum cupiditate quae odit mollitia explicabo? Voluptatibus autem dignissimos at consequatur officiis
+                commodi cumque nam quasi! Voluptatum necessitatibus tempora enim cupiditate veritatis similique facere
+                quam iusto fuga mollitia quibusdam dolores, officiis ex maxime quae modi nobis possimus ipsa quidem at
+                dicta corrupti sequi consectetur! Optio alias voluptatem libero quam minima! Ex, quos quisquam? Iste
+                repellendus voluptatum, ut similique voluptates, fugit repellat harum voluptas, sapiente autem suscipit
+                nihil atque. Consequatur harum velit doloribus voluptates sed numquam facilis quia nostrum, voluptatibus
+                perferendis doloremque eligendi iusto culpa a, porro est, laudantium voluptate. Quod natus sint illo
+                repellendus consequatur tempora voluptatibus dolorem, voluptatum animi ullam excepturi, enim delectus
+                nesciunt accusantium, ducimus in! Totam aliquam quaerat, rerum magni vero quis labore ad ipsum optio ut
+                animi id sequi nam facere eum aliquid temporibus placeat illo beatae et eaque, in laudantium non. Labore
+                deleniti quisquam voluptatum, veniam inventore dolor assumenda? Atque placeat maxime, vitae iste,
+                officia a quidem dolorem quis quia ad, provident porro sequi. Vero?</p>
+        </div>
+        <div class="box">
+            <h3>box - 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sed praesentium facere nisi quod
+                officia vitae distinctio quis unde? Optio consequuntur alias accusantium necessitatibus facilis commodi
+                sed eaque? Voluptas voluptatum omnis exercitationem hic odio? Minima enim atque eos veniam consequatur,
+                laborum cupiditate quae odit mollitia explicabo? Voluptatibus autem dignissimos at consequatur officiis
+                commodi cumque nam quasi! Voluptatum necessitatibus tempora enim cupiditate veritatis similique facere
+                quam iusto fuga mollitia quibusdam dolores, officiis ex maxime quae modi nobis possimus ipsa quidem at
+                dicta corrupti sequi consectetur! Optio alias voluptatem libero quam minima! Ex, quos quisquam? Iste
+                repellendus voluptatum, ut similique voluptates, fugit repellat harum voluptas, sapiente autem suscipit
+                nihil atque. Consequatur harum velit doloribus voluptates sed numquam facilis quia nostrum, voluptatibus
+                perferendis doloremque eligendi iusto culpa a, porro est, laudantium voluptate. Quod natus sint illo
+                repellendus consequatur tempora voluptatibus dolorem, voluptatum animi ullam excepturi, enim delectus
+                nesciunt accusantium, ducimus in! Totam aliquam quaerat, rerum magni vero quis labore ad ipsum optio ut
+                animi id sequi nam facere eum aliquid temporibus placeat illo beatae et eaque, in laudantium non. Labore
+                deleniti quisquam voluptatum, veniam inventore dolor assumenda? Atque placeat maxime, vitae iste,
+                officia a quidem dolorem quis quia ad, provident porro sequi. Vero?</p>
+        </div>
+
+    </div>
+
+
+    <div class="box-container">
+        <div class="items">box - 1</div>
+        <div class="items">box - 2</div>
+        <div class="items">box - 3</div>
+        <div class="items">box - 4</div>
+        <div class="items">box - 5</div>
+        <div class="items">box - 6</div>
+        <div class="items">box - 7</div>
+        <div class="items">box - 8</div>
+        <div class="items">box - 9</div>
+        <div class="items">box - 10</div>
+        <div class="items">box - 11</div>
+        <div class="items">box - 12</div>
+        <div class="items">box - 13</div>
+        <div class="items">box - 14</div>
+        <div class="items">box - 15</div>
+        <div class="items">box - 16</div>
+        <div class="items">box - 17</div>
+        <div class="items">box - 18</div>
+        <div class="items">box - 19</div>
+        <div class="items">box - 20</div>
+    </div>
 </body>
+
 </html>
